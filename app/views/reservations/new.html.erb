@@ -1,3 +1,13 @@
+<% if @reservation.errors.any? %>
+<h2>Please Follow instructions</h2>
+<ul>
+<% @reservation.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+<% end %>
+
+
 <div class="well">
 <%= bootstrap_form_for :reservation, url: reservations_path  do |f| %>
   <%= f.text_field :name %>
@@ -7,7 +17,10 @@
   <%= f.time_field :time %>
   <%= f.submit "Confirm Reservation" %>
 
-  <p><%= link_to 'Cancel and Go back', root_path %></p>
 
+
+  
 <% end %>
 </div>
+
+<p><%= link_to 'Cancel and Go back', root_path %></p>

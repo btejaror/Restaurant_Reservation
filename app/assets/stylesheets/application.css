@@ -15,10 +15,11 @@
  
  */
 
+
  
 
 #logo {
-	color: red;
+	color: blue;
 	font-family: TimesNewRoman;
 	letter-spacing: -1px;
 	font-weight: bold;
@@ -30,5 +31,10 @@
 }
 
 .container {
-	color: black;
+	background-color: black;
+	
 }
+
+
+
+
