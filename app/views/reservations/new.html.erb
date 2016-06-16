@@ -7,8 +7,8 @@
 </ul>
 <% end %>
 
-
-<div class="well">
+<p>
+<div class="well",>
 <%= bootstrap_form_for :reservation, url: reservations_path  do |f| %>
   <%= f.text_field :name %>
   <%= f.text_field :phone_number %>
@@ -17,7 +17,7 @@
   <%= f.time_field :time %>
   <%= f.submit "Confirm Reservation" %>
 
-
+</p>
 
   
 <% end %>
