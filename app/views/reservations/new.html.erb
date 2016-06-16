@@ -1,0 +1,13 @@
+<div class="well">
+<%= bootstrap_form_for :reservation, url: reservations_path  do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :phone_number %>
+  <%= f.number_field :party_size %>
+  <%= f.date_field :date %>
+  <%= f.time_field :time %>
+  <%= f.submit "Confirm Reservation" %>
+
+  <p><%= link_to 'Cancel and Go back', root_path %></p>
+
+<% end %>
+</div>
