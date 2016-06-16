@@ -19,7 +19,7 @@
  
 
 #logo {
-	color: blue;
+	color: black;
 	font-family: TimesNewRoman;
 	letter-spacing: -1px;
 	font-weight: bold;
@@ -27,7 +27,7 @@
 
 }
 #logo:hover{
-	color: black;
+	color: blue;
 }
 
 

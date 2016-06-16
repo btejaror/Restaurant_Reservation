@@ -1,27 +1,31 @@
-<h1 align="center">New Reservation Confirmed</h1>
+<h1 align="center">Reservation Details</h1>
 
 <div align="center"> 
-<p>
-  <strong>Name:</strong>
-  <%= @reservation.name %>
-</p>
-<p>
-  <strong>Phone Number:</strong>
-  <%= @reservation.phone_number %>
-</p>
-<p>
-  <strong>Party Size:</strong>
-  <%= @reservation.party_size %>
-</p>
-<p>
-  <strong>Date:</strong>
-  <%= @reservation.date %>
-</p>
-<p>
-  <strong>Time:</strong>
-  <%= @reservation.time %>
-</p>
+
+<table style="width:15%">
+
+<tr>
+  <td><strong>Name:</strong></td>
+  <td><%= @reservation.name %></td>
+</tr>
+<tr>
+  <td><strong>Phone Number:</strong></td>
+  <td><%= @reservation.phone_number %></td>
+</tr>
+<tr>
+  <td><strong>Party Size:</strong></td>
+  <td><%= @reservation.party_size %></td>
+</tr>
+<tr>
+  <td><strong>Date:</strong></td>
+  <td><%= @reservation.date %></td>
+</tr>
+<tr>
+  <td><strong>Time:</strong></td>
+  <td><%= @reservation.time %></td>
+</tr>
+</table>
 </div>
 
 
-<h4 align="center"><%= link_to 'View all Reservations', reservations_path %> | <%= link_to 'Make New Reservation' , new_reservation_path %>
+<h4 align="center"><%= link_to 'View all Reservations', reservations_path %> | <%= link_to 'Make New Reservation' , new_reservation_path %></h4>
